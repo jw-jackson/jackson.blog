@@ -1,4 +1,8 @@
-baseURL: https://example.org/
+baseURL: https://blog.jacksonwang28.top/
 languageCode: en-us
 title: Jackson's Blog
 theme: ["PaperMod"]
+
+params:
+   # 刚开始很疑惑为什么我的博文没有像demo站一样在一个框框里，后来发现是第一篇文章有特别的显示设置，把下面这行加上就好啦
+  disableSpecial1stPost: true
