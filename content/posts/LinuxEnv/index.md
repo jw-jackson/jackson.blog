@@ -1,11 +1,13 @@
 ---
-title: Linux 环境变量，进程的环境列表概述
+title: Linux环境变量与进程环境列表
 dir: posts/LinuxEnv
 share: true
+tags:
+  - linux
 date: 2024-03-13T19:30:13+08:00
 draft: false
 ---
-## 概述
+## 一、概述
 
 每个进程都有一份环境列表，即在用户空间内存维护的一组环境变量。
 * 调用 `fork()` 创建的新进程，会继承父进程的环境副本，这也为父子进程间通信提供了一种机制。
@@ -24,12 +26,12 @@ NMAE=jackson program
 # 可以在 program 前放置多对
 ```
 
-## 在 shell 中访问
+## 二、 在 shell 中访问
 
 `printenv` 命令会打印当前进程的环境列表。
 通过 Linux 专有的 `/proc/PID/environ` 文件可以检查任一进程的环境列表。
 
-## 在程序中访问
+## 三、在程序中访问
 
 
 **读取环境变量**
