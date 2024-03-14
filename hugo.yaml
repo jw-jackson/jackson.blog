@@ -6,3 +6,25 @@ theme: ["PaperMod"]
 params:
    # 刚开始很疑惑为什么我的博文没有像demo站一样在一个框框里，后来发现是第一篇文章有特别的显示设置，把下面这行加上就好啦
   disableSpecial1stPost: true
+  homeInfoParams:
+    Title: Hi Welcome
+    Content: Can be Info, links, about
+
+# support search
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON # necessary for search
+
+menus:
+  main:
+  - name: Home 
+    pageRef: /
+    weight: 1
+  - name: Archives
+    pageRef: /archives/
+    weight: 2
+  - name: Search
+    pageRef: /search/
+    weight: 3
