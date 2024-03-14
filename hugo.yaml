@@ -28,3 +28,6 @@ menus:
   - name: Search
     pageRef: /search/
     weight: 3
+  - name: Tags
+    pageRef: /tags/
+    weight: 4
