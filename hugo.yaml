@@ -6,9 +6,25 @@ theme: ["PaperMod"]
 params:
    # 刚开始很疑惑为什么我的博文没有像demo站一样在一个框框里，后来发现是第一篇文章有特别的显示设置，把下面这行加上就好啦
   disableSpecial1stPost: true
+  description: "description"
+  ShowCodeCopyButtons: true
+  ShowPageNums: true
+  ShowShareButtons: true
+  ShowReadingTime: true
+  displayFullLangName: true
+  ShowPostNavLinks: true
+  ShowBreadCrumbs: true
+  ShowRssButtonInSectionTermList: true
+  ShowAllPagesInArchive: true
+  # table of contents
+  ShowToc: true
   homeInfoParams:
     Title: Hi Welcome
-    Content: Can be Info, links, about
+    Content: 不积跬步无以至千里
+  socialIcons:
+    - name: github
+      title: View Source on Github
+      url: "https://github.com/jw-jackson"
 
 # support search
 outputs:
